@@ -46,5 +46,5 @@ This dataset has **7** facial expression categories (**angry**, **disgust**, **f
 * Predict
 
 ## References
-[A Real-time Facial Expression Recognizer using Deep Neural Network] (http://brain.kaist.ac.kr/document/JJW/ACM_IMCOM_2016_JJW.pdf)
-[The Extended Cohn-Kanade Dataset (CK+): A complete dataset for action unit and emotion-specified expression] (http://www.pitt.edu/~jeffcohn/CVPR2010_CK+2.pdf)
+[A Real-time Facial Expression Recognizer using Deep Neural Network](http://brain.kaist.ac.kr/document/JJW/ACM_IMCOM_2016_JJW.pdf)
+[The Extended Cohn-Kanade Dataset (CK+): A complete dataset for action unit and emotion-specified expression](http://www.pitt.edu/~jeffcohn/CVPR2010_CK+2.pdf)
