@@ -23,7 +23,7 @@ In this project, we build a classifier to detect basic human emotion from facial
 *Challenges in Representation Learning: Facial Expression Recognition Challenge*  
  
 <div align="center">
-<img src="https://github.com/isthatyoung/Face-emotion-recognition/blob/master/images/Figure%201.png" width = "359" height = "169" align=center />
+<img src="https://github.com/isthatyoung/Face-emotion-recognition/blob/master/images/Figure%201.png" width = "359" height = "169" align=left />
 </div>  
 This dataset has 7 facial expression categories (angry, disgust, fear, happy, sad, surprise and neutral)<br>  
 Totally 28709 training images, 3589 validation images and 3589 test images with grayscale image size 48px * 48px.  
@@ -38,7 +38,7 @@ Totally 28709 training images, 3589 validation images and 3589 test images with 
 2. Face detection
 3. Face alignment
 <div align="center">
-<img src="https://github.com/isthatyoung/Face-emotion-recognition/blob/master/images/Figure%202.png" width = "359" height = "169" align=center />
+<img src="https://github.com/isthatyoung/Face-emotion-recognition/blob/master/images/Figure%202.png" width = "311" height = "125" align=center />
 </div> 
 
 4. Convert to LMDB
