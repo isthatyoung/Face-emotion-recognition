@@ -29,7 +29,7 @@ This dataset has **7** facial expression categories (**angry**, **disgust**, **f
 * Testing images of FER2013  
 * The Extended Cohn-Kanade Dataset dataset (CK+48)
 
-##Main tasks
+## Main tasks
 * Preprocessing
 1. Extract and create images for FER2013 from csv
 2. Face detection
