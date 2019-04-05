@@ -37,6 +37,7 @@ Totally 28709 training images, 3589 validation images and 3589 test images with 
 1. Extract and create images for FER2013 from csv
 2. Face detection
 3. Face alignment
+![enter image description here](https://github.com/isthatyoung/Face-emotion-recognition/blob/master/images/Figure%202.png){:height="100px" width="400px"}
 4. Convert to LMDB
 5. Compute mean
 
