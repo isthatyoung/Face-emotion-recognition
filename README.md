@@ -7,7 +7,7 @@ An implementation of face emotion recognition by Convolutional neurla network an
 * OpenCV (cv2)
 * Numpy
 * skimage
-* mtcnn (https://github.com/ipazc/mtcnn)
+* [mtcnn](https://github.com/ipazc/mtcnn)
 
 ## Description
 As humans, we classify emotions all the time without knowing it. 
@@ -46,5 +46,5 @@ This dataset has **7** facial expression categories (**angry**, **disgust**, **f
 * Predict
 
 ## References
-[A Real-time Facial Expression Recognizer using Deep Neural Network](http://brain.kaist.ac.kr/document/JJW/ACM_IMCOM_2016_JJW.pdf)
+[A Real-time Facial Expression Recognizer using Deep Neural Network](http://brain.kaist.ac.kr/document/JJW/ACM_IMCOM_2016_JJW.pdf)  
 [The Extended Cohn-Kanade Dataset (CK+): A complete dataset for action unit and emotion-specified expression](http://www.pitt.edu/~jeffcohn/CVPR2010_CK+2.pdf)
