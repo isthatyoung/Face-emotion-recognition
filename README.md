@@ -33,7 +33,7 @@ Totally 28709 training images, 3589 validation images and 3589 test images with 
 * Testing images of FER2013  
 * The Extended Cohn-Kanade Dataset dataset (CK+48)
 
-## Main tasks
+## Main tasks(recent accomplished)
 * Preprocessing
 1. Extract and create images for FER2013 from csv
 2. Face detection
