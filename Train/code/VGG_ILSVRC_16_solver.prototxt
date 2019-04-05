@@ -1,0 +1,18 @@
+net: "./VGG_ILSVRC_16_layers_model.prototxt"
+test_iter: 82
+test_interval: 500
+
+base_lr: 0.1
+lr_policy: "step"
+gamma: 0.1
+
+stepsize : 500
+max_iter: 2000
+
+display: 100
+momentum: 0.9
+weight_decay: 0.0005
+snapshot: 1000
+snapshot_prefix: "./VGG-16_model"
+
+solver_mode: GPU
