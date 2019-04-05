@@ -1,5 +1,5 @@
 # Face-emotion-recognition
-An implementation of face emotion recognition by Convolutional neurla network and Caffe.
+An implementation of face emotion recognition by Convolutional neurla network.
 
 ## Requirements
 * Caffe 1.0.0
