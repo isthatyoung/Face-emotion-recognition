@@ -12,11 +12,10 @@ layer {
   top: "conv1"
   param {
     lr_mult: 1
-    decay_mult: 1
+
   }
   param {
     lr_mult: 2
-    decay_mult: 0
   }
   convolution_param {
     num_output: 32
@@ -28,8 +27,25 @@ layer {
     }
     bias_filler {
       type: "constant"
-      value: 0
     }
+  }
+}
+layer {
+  name: "conv1/bn"
+  type: "BatchNorm"
+  bottom: "conv1"
+  top: "conv1"
+  param {
+    lr_mult: 0
+    decay_mult: 0
+  }
+  param {
+    lr_mult: 0
+    decay_mult: 0
+  }
+  param {
+    lr_mult: 0
+    decay_mult: 0
   }
 }
 layer {
@@ -56,11 +72,9 @@ layer {
   top: "conv2"
   param {
     lr_mult: 1
-    decay_mult: 1
   }
   param {
     lr_mult: 2
-    decay_mult: 0
   }
   convolution_param {
     num_output: 32
@@ -72,8 +86,25 @@ layer {
     }
     bias_filler {
       type: "constant"
-      value: 0
     }
+  }
+}
+layer {
+  name: "conv2/bn"
+  type: "BatchNorm"
+  bottom: "conv2"
+  top: "conv2"
+  param {
+    lr_mult: 0
+    decay_mult: 0
+  }
+  param {
+    lr_mult: 0
+    decay_mult: 0
+  }
+  param {
+    lr_mult: 0
+    decay_mult: 0
   }
 }
 layer {
@@ -100,11 +131,9 @@ layer {
   top: "conv3"
   param {
     lr_mult: 1
-    decay_mult: 1
   }
   param {
     lr_mult: 2
-    decay_mult: 0
   }
   convolution_param {
     num_output: 64
@@ -116,8 +145,25 @@ layer {
     }
     bias_filler {
       type: "constant"
-      value: 0
     }
+  }
+}
+layer {
+  name: "conv3/bn"
+  type: "BatchNorm"
+  bottom: "conv3"
+  top: "conv3"
+  param {
+    lr_mult: 0
+    decay_mult: 0
+  }
+  param {
+    lr_mult: 0
+    decay_mult: 0
+  }
+  param {
+    lr_mult: 0
+    decay_mult: 0
   }
 }
 layer {
@@ -144,11 +190,9 @@ layer {
   top: "fc1"
   param {
     lr_mult: 1
-    decay_mult: 1
   }
   param {
     lr_mult: 2
-    decay_mult: 0
   }
   inner_product_param {
     num_output: 2048
@@ -157,7 +201,6 @@ layer {
     }
     bias_filler {
       type: "constant"
-      value: 0
     }
   }
 }
@@ -177,11 +220,9 @@ layer {
   top: "fc2"
   param {
     lr_mult: 1
-    decay_mult: 1
   }
   param {
     lr_mult: 2
-    decay_mult: 0
   }
   inner_product_param {
     num_output: 1024
@@ -190,7 +231,6 @@ layer {
     }
     bias_filler {
       type: "constant"
-      value: 0
     }
   }
 }
@@ -210,11 +250,9 @@ layer {
   top: "fc3"
   param {
     lr_mult: 1
-    decay_mult: 1
   }
   param {
     lr_mult: 2
-    decay_mult: 0
   }
   inner_product_param {
     num_output: 7
@@ -223,7 +261,6 @@ layer {
     }
     bias_filler {
       type: "constant"
-      value: 0
     }
   }
 }

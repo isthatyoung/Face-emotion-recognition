@@ -2,11 +2,11 @@ net: "FaceEmotionNet_model.prototxt"
 test_iter: 56
 test_interval: 1000
 
-base_lr: 0.01
+base_lr: 0.09
 lr_policy: "step"
 gamma: 0.1
 
-stepsize : 10000
+stepsize : 20000
 max_iter: 40000
 
 display: 100
