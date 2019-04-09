@@ -2,17 +2,17 @@ net: "FaceEmotionNet_model.prototxt"
 test_iter: 56
 test_interval: 1000
 
-base_lr: 0.01
+base_lr: 0.09
 lr_policy: "step"
 gamma: 0.1
 
 stepsize : 20000
-max_iter: 45000
+max_iter: 40000
 
 display: 100
 momentum: 0.9
 weight_decay: 0.0005
-snapshot: 45000
-snapshot_prefix: ".data/FaceEmotionNet_model"
+snapshot: 5000
+snapshot_prefix: "./FaceEmotionNet_model"
 
 solver_mode: GPU
