@@ -7,7 +7,7 @@ lr_policy: "step"
 gamma: 0.1
 
 stepsize : 20000
-max_iter: 40000
+max_iter: 60000
 
 display: 100
 momentum: 0.9
