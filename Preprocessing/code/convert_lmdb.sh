@@ -12,7 +12,7 @@ rm -rf $MY/img_train_lmdb
 $MY/train_list.txt \
 $MY/img_train_lmdb
 
-echo "Create test lmdb.."
+echo "Create validate lmdb.."
 rm -rf $MY/img_val_lmdb
 /home/ubuntu/caffe/build/tools/convert_imageset \
 --shuffle \
@@ -22,5 +22,16 @@ rm -rf $MY/img_val_lmdb
 /home/ubuntu/Face-emotion-recognition-master/Preprocessing/data/face-alignment-fer2013/val \
 $MY/validation_list.txt \
 $MY/img_val_lmdb
+
+echo "Create test lmdb.."
+rm -rf $MY/img_test_lmdb
+/home/ubuntu/caffe/build/tools/convert_imageset \
+--shuffle \
+--resize_width=48 \
+--resize_height=48 \
+--gray \
+/home/ubuntu/Face-emotion-recognition-master/Preprocessing/data/face-alignment-fer2013/test \
+$MY/test_list.txt \
+$MY/img_test_lmdb
 
 echo "All Done.."
