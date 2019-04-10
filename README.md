@@ -38,20 +38,32 @@ Totally 28709 training images, 3589 validation images and 3589 test images with 
 1. Extract and create images for FER2013 from csv
 2. Face detection
 3. Face alignment
-<div align="center">
-<img src="https://github.com/isthatyoung/Face-emotion-recognition/blob/master/images/Figure%202.png" width = "311" height = "125" align=center />
-</div> 
-
 4. Convert to LMDB
 5. Compute mean
 
-* Training
+* Training & Testing (recent accomplished)
 1. Build model
 2. Train model
 3. Adjust hyper-parameters
 
-* Testing
-* Predict
+* Predicting (recent accomplished)
+
+## Prepprocessing
+<div align="center">
+<img src="https://github.com/isthatyoung/Face-emotion-recognition/blob/master/images/Figure%202.png" width = "311" height = "125" align=center />
+</div>  
+
+## Training & Testing
+### CNN Structure
+### Training loss
+<div align="center">
+<img src="https://github.com/isthatyoung/Face-emotion-recognition/blob/master/Train/data/loss.png" width = "400" height = "300" align=center />
+</div>   
+ 
+### Testing accuracy
+  
+### Predicting
+
 
 ## References
 [A Real-time Facial Expression Recognizer using Deep Neural Network](http://brain.kaist.ac.kr/document/JJW/ACM_IMCOM_2016_JJW.pdf)  
