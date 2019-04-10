@@ -6,7 +6,7 @@ import numpy as np
 from align_faces import warp_and_crop_face, get_reference_facial_points
 def main():
     dataset = 'fer2013'
-    path = '/home/ubuntu/face-emotion-detection/data/' + dataset
+    path = '/home/ubuntu/Face-emotion-recognition-master/Preprocessing/data/' + dataset
     dirs = os.listdir(path)
     detector = MTCNN()
     face_count = 0
@@ -14,12 +14,13 @@ def main():
     if dataset == 'CK+48':
         for dir in dirs:
             for image in os.listdir('{}/{}'.format(path,dir)):
+                #Load as RBG
                 img = cv2.imread('{}/{}/{}'.format(path, dir, image))
                 facial_5_points, face_count = MTCNN_face_detection(img,detector,dir,image, dataset, face_count)
+                #Load as RBG
                 img = cv2.imread('{}/{}/{}'.format(path, dir, image))
                 count = face_align_similarity_transformation(img, facial_5_points, dir,image, dataset, count)
     else:
-        path = '/home/ubuntu/face-emotion-detection/data/' + dataset
         for dir in dirs:
             for label_dir in os.listdir('{}/{}'.format(path,dir)):
                 for image in os.listdir('{}/{}/{}'.format(path,dir,label_dir)):
@@ -54,17 +55,17 @@ def MTCNN_face_detection(img, detector, dir_path, image_path, dataset, count):
         cv2.circle(img, (keypoints['mouth_left']), 1, (0, 0, 255), 2)
         cv2.circle(img, (keypoints['mouth_right']), 1, (0, 0, 255), 2)
 
-        folder = os.path.exists("/home/ubuntu/face-emotion-detection/data/face-detection-{}/{}".format(dataset,dir_path))
+        folder = os.path.exists("/home/ubuntu/Face-emotion-recognition-master/Preprocessing/data/face-detection-{}/{}".format(dataset,dir_path))
         if not folder:
-            os.makedirs("/home/ubuntu/face-emotion-detection/data/face-detection-{}/{}".format(dataset,dir_path))
-        cv2.imwrite("/home/ubuntu/face-emotion-detection/data/face-detection-{}/{}/{}".format(dataset,dir_path, image_path), img)
+            os.makedirs("/home/ubuntu/Face-emotion-recognition-master/Preprocessing/data/face-detection-{}/{}".format(dataset,dir_path))
+        cv2.imwrite("/home/ubuntu/Face-emotion-recognition-master/Preprocessing/data/face-detection-{}/{}/{}".format(dataset,dir_path, image_path), img)
 
     else:
         keypoints = None
-        folder = os.path.exists("/home/ubuntu/face-emotion-detection/data/face-detection-{}/{}".format(dataset,dir_path))
+        folder = os.path.exists("/home/ubuntu/Face-emotion-recognition-master/Preprocessing/data/face-detection-{}/{}".format(dataset,dir_path))
         if not folder:
-            os.makedirs("/home/ubuntu/face-emotion-detection/data/face-detection-{}/{}".format(dataset,dir_path))
-        cv2.imwrite("/home/ubuntu/face-emotion-detection/data/face-detection-{}/{}/{}".format(dataset,dir_path, image_path), img)
+            os.makedirs("/home/ubuntu/Face-emotion-recognition-master/Preprocessing/data/face-detection-{}/{}".format(dataset,dir_path))
+        cv2.imwrite("/home/ubuntu/Face-emotion-recognition-master/Preprocessing/data/face-detection-{}/{}/{}".format(dataset,dir_path, image_path), img)
 
     return keypoints, count
 
@@ -72,6 +73,7 @@ def face_align_similarity_transformation(img, facial_5_points, dir_path, image_p
     count += 1
     if facial_5_points != None:
         print(facial_5_points)
+
         # #facial_5_points = np.array(facial_5_points, dtype=np.float32)
         facial_5_points = np.array([facial_5_points['left_eye'], facial_5_points['right_eye'], facial_5_points['nose'], facial_5_points['mouth_left'], facial_5_points['mouth_right']],dtype=np.float32)
 
@@ -86,17 +88,17 @@ def face_align_similarity_transformation(img, facial_5_points, dir_path, image_p
 
         ##RGB to gray
         dst_img = cv2.cvtColor(dst_img, cv2.COLOR_BGR2GRAY)
-        folder = os.path.exists("/home/ubuntu/face-emotion-detection/data/face-alignment-{}/{}".format(dataset,dir_path))
+        folder = os.path.exists("/home/ubuntu/Face-emotion-recognition-master/Preprocessing/data/face-alignment-{}/{}".format(dataset,dir_path))
         if not folder:
-            os.makedirs("/home/ubuntu/face-emotion-detection/data/face-alignment-{}/{}".format(dataset,dir_path))
-        cv2.imwrite("/home/ubuntu/face-emotion-detection/data/face-alignment-{}/{}/{}".format(dataset,dir_path, image_path), dst_img)
+            os.makedirs("/home/ubuntu/Face-emotion-recognition-master/Preprocessing/data/face-alignment-{}/{}".format(dataset,dir_path))
+        cv2.imwrite("/home/ubuntu/Face-emotion-recognition-master/Preprocessing/data/face-alignment-{}/{}/{}".format(dataset,dir_path, image_path), dst_img)
 
     else:
         img = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
-        folder = os.path.exists("/home/ubuntu/face-emotion-detection/data/face-alignment-{}/{}".format(dataset,dir_path))
+        folder = os.path.exists("/home/ubuntu/Face-emotion-recognition-master/Preprocessing/data/face-alignment-{}/{}".format(dataset,dir_path))
         if not folder:
-            os.makedirs("/home/ubuntu/face-emotion-detection/data/face-alignment-{}/{}".format(dataset,dir_path))
-        cv2.imwrite("/home/ubuntu/face-emotion-detection/data/face-alignment-{}/{}/{}".format(dataset,dir_path, image_path), img)
+            os.makedirs("/home/ubuntu/Face-emotion-recognition-master/Preprocessing/data/face-alignment-{}/{}".format(dataset,dir_path))
+        cv2.imwrite("/home/ubuntu/Face-emotion-recognition-master/Preprocessing/data/face-alignment-{}/{}/{}".format(dataset,dir_path, image_path), img)
 
     return count
 

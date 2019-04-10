@@ -1,5 +1,5 @@
+##TODO Create .txt for images file list with full path
 import os
-
 
 def main():
     path = '/home/ubuntu/face-emotion-detection/data/'

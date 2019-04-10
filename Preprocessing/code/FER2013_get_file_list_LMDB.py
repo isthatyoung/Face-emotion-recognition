@@ -1,3 +1,4 @@
+##TODO Create .txt for images file list with relative path for lmdb convert script
 import os
 
 
