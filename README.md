@@ -62,7 +62,7 @@ Totally 28709 training images, 3589 validation images and 3589 test images with 
  
 ### Testing accuracy
   
-### Predicting
+## Predicting
 
 
 ## References
