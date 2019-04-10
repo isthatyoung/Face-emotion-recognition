@@ -6,15 +6,14 @@ base_lr: 0.01
 lr_policy: "multistep"
 gamma: 0.1
 
-stepvalue: 54000
-stepvalue: 77000
-stepvalue: 90000
-max_iter: 90000
+stepvalue: 36000
+stepvalue: 48000
+stepvalue: 60000
+max_iter: 60000
 
 display: 100
 momentum: 0.9
 weight_decay: 0.0005
-snapshot: 60000
-snapshot_prefix: ".data/FaceEmotionNet_model"
+
 
 solver_mode: GPU
