@@ -48,7 +48,7 @@ Totally 28709 training images, 3589 validation images and 3589 test images with 
 
 * Predicting (recent accomplished)
 
-## Prepprocessing
+## Preprocessing
 <div align="center">
 <img src="https://github.com/isthatyoung/Face-emotion-recognition/blob/master/images/Figure%202.png" width = "311" height = "125" align=center />
 </div>  
