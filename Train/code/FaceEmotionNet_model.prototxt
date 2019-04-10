@@ -33,7 +33,7 @@ layer {
   }
   data_param {
     source: "../../Preprocessing/data/img_val_lmdb"
-    batch_size: 64
+    batch_size: 10
     backend: LMDB
   }
 }
