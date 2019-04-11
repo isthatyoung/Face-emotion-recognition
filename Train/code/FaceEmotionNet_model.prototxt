@@ -33,7 +33,7 @@ layer {
   }
   data_param {
     source: "../../Preprocessing/data/img_val_lmdb"
-    batch_size: 10
+    batch_size: 100
     backend: LMDB
   }
 }
@@ -238,6 +238,12 @@ layer {
   }
 }
 layer {
+  name: "relu4"
+  type: "ReLU"
+  bottom: "fc1"
+  top: "fc1"
+}
+layer {
   name: "drop1"
   type: "Dropout"
   bottom: "fc1"
@@ -266,6 +272,12 @@ layer {
       type: "constant"
     }
   }
+}
+layer {
+  name: "relu5"
+  type: "ReLU"
+  bottom: "fc2"
+  top: "fc2"
 }
 layer {
   name: "drop2"

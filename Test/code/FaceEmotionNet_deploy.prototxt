@@ -205,6 +205,12 @@ layer {
   }
 }
 layer {
+  name: "relu4"
+  type: "ReLU"
+  bottom: "fc1"
+  top: "fc1"
+}
+layer {
   name: "drop1"
   type: "Dropout"
   bottom: "fc1"
@@ -233,6 +239,12 @@ layer {
       type: "constant"
     }
   }
+}
+layer {
+  name: "relu5"
+  type: "ReLU"
+  bottom: "fc2"
+  top: "fc2"
 }
 layer {
   name: "drop2"
@@ -267,7 +279,7 @@ layer {
 layer{
   name: "prob"
   type: "Softmax"
-  bottom: "score"
+  bottom: "fc3"
   top: "prob"
 }
 
