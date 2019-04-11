@@ -1,26 +1,30 @@
 #from mtcnn.mtcnn import MTCNN
 import caffe
 import cv2
+import matplotlib
 from caffe.proto import caffe_pb2
 import matplotlib.pyplot as plt
 #from align_faces import warp_and_crop_face, get_reference_facial_points
 import numpy as np
 import matplotlib.pyplot as plt
-plt.rcParams['figure.figsize'] = (8, 8)
-
+matplotlib.use('TkAgg')
 
 def main():
+    plt.figure()
     dir = '/home/ubuntu/Face-emotion-recognition-master/'
     net = caffe_load_model(dir)
     #face_key_points = MTCNN_face_detection(dir)
     #face_align_similarity_transformation(face_key_points,dir)
     image = caffe.io.load_image(dir + 'Test/data/face-align-test.png')
     plt.imshow(image)
+
     binMean = dir + 'Preprocessing/data/train_mean.binaryproto'
     npyMean = dir + 'Preprocessing/data/mean.npy'
     convert_mean(binMean, npyMean)
     im = caffe.io.load_image(dir+'Test/data/face-align-test.png',color=False)
     predict(im,net,dir)
+
+    plt.show()
 
 
 def caffe_load_model(dir):

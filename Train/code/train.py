@@ -2,9 +2,10 @@ import caffe
 from caffe.proto import caffe_pb2
 import numpy as np
 import matplotlib.pyplot as plt
-plt.rcParams['figure.figsize'] = (8, 8)
-
+import matplotlib
+matplotlib.use('TkAgg')
 def main():
+
     caffe.set_device(0)
     caffe.set_mode_gpu()
     dir = '/home/ubuntu/Face-emotion-recognition-master/Train/code/'
@@ -20,7 +21,7 @@ def load_solver(dir):
     solver = caffe.SGDSolver(solver_proto)
     return solver
 def train(solver):
-    niter = 60000
+    niter = 68000
     test_interval = 1000
     train_loss = np.zeros(niter)
     test_acc = np.zeros(int(np.ceil(niter / test_interval)))
@@ -61,7 +62,7 @@ def plot_accuracy(accuracy, test_interval):
     plt.grid(True)
     plt.legend(loc='best')
     plt.title('Test accuracy vs iteration on FAR2013')
-    plt.savefig('/home/ubuntu/accuracy.png')
+
 
 
 
