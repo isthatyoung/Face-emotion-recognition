@@ -1,6 +1,7 @@
 net: "FaceEmotionNet_model.prototxt"
-test_iter: 400
-test_interval: 5000
+##Val dataset: 3589, test dataset: 3589, 40 iterations could cover 1 epoch (3589/100)
+test_iter: 40
+test_interval: 1000
 
 base_lr: 0.01
 lr_policy: "multistep"
