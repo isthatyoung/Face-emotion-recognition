@@ -63,7 +63,9 @@ Totally 28709 training images, 3589 validation images and 3589 test images with 
 ### Testing accuracy
 Highest test accuracy on FER2013: **69%**.
 ## Predicting
-
+<div align="center">
+<img src="https://github.com/isthatyoung/Face-emotion-recognition/blob/master/images/figure3.png" width = "600" height = "230" align=center />
+</div> 
 
 ## References
 [A Real-time Facial Expression Recognizer using Deep Neural Network](http://brain.kaist.ac.kr/document/JJW/ACM_IMCOM_2016_JJW.pdf)  
