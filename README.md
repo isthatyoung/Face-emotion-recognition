@@ -67,6 +67,10 @@ Highest test accuracy on FER2013: **69%**.
 <img src="https://github.com/isthatyoung/Face-emotion-recognition/blob/master/images/figure3.png" width = "600" height = "230" align=center />
 </div> 
 
+<div align="center">
+<img src="https://github.com/isthatyoung/Face-emotion-recognition/blob/master/images/figure4.png" width = "600" height = "230" align=center />
+</div> 
+
 ## References
 [A Real-time Facial Expression Recognizer using Deep Neural Network](http://brain.kaist.ac.kr/document/JJW/ACM_IMCOM_2016_JJW.pdf)  
 [The Extended Cohn-Kanade Dataset (CK+): A complete dataset for action unit and emotion-specified expression](http://www.pitt.edu/~jeffcohn/CVPR2010_CK+2.pdf)
