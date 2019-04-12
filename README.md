@@ -63,11 +63,12 @@ Totally 28709 training images, 3589 validation images and 3589 test images with 
 ### Testing accuracy
 Highest test accuracy on FER2013: **69%**.
 ## Predicting
+### Preprocess
 <div align="center">
 <img src="https://github.com/isthatyoung/Face-emotion-recognition/blob/master/images/figure3.png" width = "600" height = "230" align=center />
 </div> 
-<br>
-<br>
+
+### Predict
 <div align="center">
 <img src="https://github.com/isthatyoung/Face-emotion-recognition/blob/master/images/figure4.png" width = "610" height = "360" align=center />
 </div> 
