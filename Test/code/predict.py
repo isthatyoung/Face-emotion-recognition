@@ -90,8 +90,24 @@ def predict(im, net, dir):
     out = net.forward()
     prob = net.blobs['prob'].data[0].flatten()
     order = prob.argsort()[-1]
+    if order == 0:
+        emotion = 'Angry'
+    elif order == 1:
+        emotion = 'Disgust'
+    elif order == 2:
+        emotion = 'Fear'
+    elif order == 3:
+        emotion = 'Happy'
+    elif order == 4:
+        emotion = 'Sad'
+    elif order == 5:
+        emotion = 'Surprise'
+    elif order == 6:
+        emotion = 'Neutral'
+
     print('Probability: {}'.format(prob))
-    print("Predict emotion is {}".format(order))
+    print("Predict emotion is {}".format(emotion))
+
 
 
 def convert_mean(binMean,npyMean):
