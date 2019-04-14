@@ -57,7 +57,7 @@ Totally **150** epochs training with **0.01** base learning rate and **multi-ste
 Learning rate reduced 10% during **60%** and **85%** training.
 ### CNN Structure
 <div align="center">
-<img src="https://github.com/isthatyoung/Face-emotion-recognition/blob/master/images/figure%206.png" width = "108" height = "381" align=center />
+<img src="https://github.com/isthatyoung/Face-emotion-recognition/blob/master/images/figure%206.png" width = "113" height = "375" align=center />
 </div>  
 
 ### Training loss
