@@ -54,7 +54,7 @@ Totally 28709 training images, 3589 validation images and 3589 test images with 
 
 ## Training & Testing
 Totally **150** epochs training with **0.01** base learning rate and **multi-steps** learning strategy.  
-Learning reduced 10% during **60%** and **85%** training.
+Learning rate reduced 10% during **60%** and **85%** training.
 ### CNN Structure
 ### Training loss
 <div align="center">
