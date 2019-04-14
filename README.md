@@ -69,7 +69,7 @@ Highest test accuracy on FER2013: **69%**.
 
 ### Predict
 <div align="center">
-<img src="https://github.com/isthatyoung/Face-emotion-recognition/blob/master/images/figure%205.png" width = "610" height = "360" align=center />
+<img src="https://github.com/isthatyoung/Face-emotion-recognition/blob/master/images/figure%205.png" width = "601" height = "115" align=center />
 </div> 
 
 ## References
