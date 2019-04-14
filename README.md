@@ -56,6 +56,10 @@ Totally 28709 training images, 3589 validation images and 3589 test images with 
 Totally **150** epochs training with **0.01** base learning rate and **multi-steps** learning strategy.  
 Learning rate reduced 10% during **60%** and **85%** training.
 ### CNN Structure
+<div align="center">
+<img src="https://github.com/isthatyoung/Face-emotion-recognition/blob/master/images/figure%206.png" width = "108" height = "381" align=center />
+</div>  
+
 ### Training loss
 <div align="center">
 <img src="https://github.com/isthatyoung/Face-emotion-recognition/blob/master/Train/data/loss.png" width = "400" height = "300" align=center />
