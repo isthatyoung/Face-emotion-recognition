@@ -10,13 +10,13 @@ import matplotlib.pyplot as plt
 matplotlib.use('TkAgg')
 
 def main():
-    plt.figure()
+    #plt.figure()
     dir = '/home/ubuntu/Face-emotion-recognition-master/'
     net = caffe_load_model(dir)
     #face_key_points = MTCNN_face_detection(dir)
     #face_align_similarity_transformation(face_key_points,dir)
     image = caffe.io.load_image(dir + 'Test/data/face-align-test.png')
-    plt.imshow(image)
+    #plt.imshow(image)
 
     binMean = dir + 'Preprocessing/data/train_mean.binaryproto'
     npyMean = dir + 'Preprocessing/data/mean.npy'

@@ -5,7 +5,7 @@ from PIL import Image
 import numpy as np
 
 def main():
-    path = '/home/ubuntu/face-emotion-detection/data/'
+    path = '/home/ubuntu/Face-emotion-recognition-master/Preprocessing/data/'
     database_path = os.path.join(os.path.expanduser("~"), path+'fer2013')
     datasets_path = os.path.join(os.path.expanduser("~"), path+'fer2013')
 

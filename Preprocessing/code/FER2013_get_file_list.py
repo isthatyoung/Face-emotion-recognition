@@ -2,7 +2,7 @@
 import os
 
 def main():
-    path = '/home/ubuntu/face-emotion-detection/data/'
+    path = '/home/ubuntu/Face-emotion-recognition-master/Preprocessing/data/'
     f_train = open(path + 'train_list.txt', 'w+')
     f_validation = open(path + 'validation_list.txt', 'w+')
     f_test = open(path + 'test_list.txt', 'w+')

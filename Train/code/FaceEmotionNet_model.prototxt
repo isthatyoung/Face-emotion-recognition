@@ -10,10 +10,10 @@ layer {
   transform_param {
     mirror: true
     crop_size: 42
-    mean_file: "../../Preprocessing/data/train_mean.binaryproto"
+    mean_file: "/home/ubuntu/Face-emotion-recognition-master/Preprocessing/data/train_mean.binaryproto"
   }
   data_param {
-    source: "../../Preprocessing/data/img_train_lmdb"
+    source: "/home/ubuntu/Face-emotion-recognition-master/Preprocessing/data/img_train_lmdb"
     batch_size: 64
     backend: LMDB
   }

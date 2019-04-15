@@ -1,4 +1,4 @@
-net: "FaceEmotionNet_model.prototxt"
+net: "./FaceEmotionNet_model.prototxt"
 ##Val dataset: 3589, test dataset: 3589, 40 iterations could cover 1 epoch (3589/100)
 test_iter: 40
 test_interval: 1000
