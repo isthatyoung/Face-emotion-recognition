@@ -26,7 +26,7 @@ In this project, we build a classifier to detect basic human emotion from facial
 <div align="center">
 <img src="https://github.com/isthatyoung/Face-emotion-recognition/blob/master/images/Figure%201.png" width = "359" height = "169" align=center />
 </div>  
-This dataset has 7 facial expression categories (angry, disgust, fear, happy, sad, surprise and neutral)<br>  
+This dataset has 7 facial expression categories (angry, disgust, fear, happy, sad, surprise and neutral).<br>  
 Totally 28709 training images, 3589 validation images and 3589 test images with grayscale image size 48px * 48px.  
 
 ### Testing
