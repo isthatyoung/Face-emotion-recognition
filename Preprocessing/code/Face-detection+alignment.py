@@ -5,29 +5,35 @@ import os
 import numpy as np
 from align_faces import warp_and_crop_face, get_reference_facial_points
 def main():
-    dataset = 'fer2013'
+    dataset = 'cohn-kanade-images'
     path = '/home/ubuntu/Face-emotion-recognition-master/Preprocessing/data/' + dataset
     dirs = os.listdir(path)
     detector = MTCNN()
     face_count = 0
     count = 0
-    if dataset == 'CK+48':
-        for dir in dirs:
-            for image in os.listdir('{}/{}'.format(path,dir)):
-                #Load as RBG
-                img = cv2.imread('{}/{}/{}'.format(path, dir, image))
-                facial_5_points, face_count = MTCNN_face_detection(img,detector,dir,image, dataset, face_count)
-                #Load as RBG
-                img = cv2.imread('{}/{}/{}'.format(path, dir, image))
-                count = face_align_similarity_transformation(img, facial_5_points, dir,image, dataset, count)
+    if dataset == 'cohn-kanade-images':
+        for first_dir in dirs:
+            for second_dir in os.listdir('{}/{}'.format(path,first_dir)):
+                if not second_dir.startswith('.'):
+                    for image in os.listdir('{}/{}/{}'.format(path,first_dir,second_dir)):
+                        #Load as RBG
+                        dir = '{}/{}'.format(first_dir,second_dir)
+                        if not image.startswith('.'):
+                            img = cv2.imread('{}/{}/{}'.format(path,dir, image))
+                            print('{}/{}/{}'.format(path,dir, image))
+                            facial_5_points, face_count = MTCNN_face_detection(img,detector,dir,image, dataset, face_count)
+                            #Load as RBG
+                            img = cv2.imread('{}/{}/{}'.format(path,dir, image))
+                            count = face_align_similarity_transformation(img, facial_5_points, dir,image, dataset, count)
     else:
         for dir in dirs:
             for label_dir in os.listdir('{}/{}'.format(path,dir)):
                 for image in os.listdir('{}/{}/{}'.format(path,dir,label_dir)):
-                    img = cv2.imread('{}/{}/{}/{}'.format(path, dir, label_dir, image))
-                    facial_5_points, face_count = MTCNN_face_detection(img, detector, dir+'/'+label_dir, image, dataset, face_count)
-                    img = cv2.imread('{}/{}/{}/{}'.format(path, dir, label_dir, image))
-                    count = face_align_similarity_transformation(img, facial_5_points, dir+'/'+label_dir, image, dataset, count)
+                    if not image.startswith('.'):
+                        img = cv2.imread('{}/{}/{}/{}'.format(path, dir, label_dir, image))
+                        facial_5_points, face_count = MTCNN_face_detection(img, detector, dir+'/'+label_dir, image, dataset, face_count)
+                        img = cv2.imread('{}/{}/{}/{}'.format(path, dir, label_dir, image))
+                        count = face_align_similarity_transformation(img, facial_5_points, dir+'/'+label_dir, image, dataset, count)
 
     print("Processed totally {} images.".format(count))
     print("Totally {} images detected with face".format(face_count))

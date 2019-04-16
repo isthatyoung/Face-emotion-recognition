@@ -21,7 +21,7 @@ def load_solver(dir):
     solver = caffe.SGDSolver(solver_proto)
     return solver
 def train(solver):
-    niter = 68000
+    niter = 76000
     test_interval = 1000
     train_loss = np.zeros(niter)
     test_acc = np.zeros(int(np.ceil(niter / test_interval)))

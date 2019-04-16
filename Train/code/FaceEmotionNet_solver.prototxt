@@ -1,4 +1,4 @@
-net: "./FaceEmotionNet_model.prototxt"
+net: "/home/ubuntu/Face-emotion-recognition-master/Train/code/FaceEmotionNet_model.prototxt"
 ##Val dataset: 3589, test dataset: 3589, 40 iterations could cover 1 epoch (3589/100)
 test_iter: 40
 test_interval: 1000
@@ -7,10 +7,10 @@ base_lr: 0.01
 lr_policy: "multistep"
 gamma: 0.1
 
-stepvalue: 40800
-stepvalue: 57800
-stepvalue: 68000
-max_iter: 68000
+stepvalue: 45600
+stepvalue: 64600
+stepvalue: 76000
+max_iter: 76000
 
 display: 100
 momentum: 0.9

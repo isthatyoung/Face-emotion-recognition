@@ -8,20 +8,20 @@ rm -rf $MY/img_train_lmdb
 --resize_height=48 \
 --resize_width=48 \
 --gray \
-/home/ubuntu/Face-emotion-recognition-master/Preprocessing/data/face-alignment-fer2013/train \
+/home/ubuntu/Face-emotion-recognition-master/Preprocessing/data/face-alignment-fer2013 \
 $MY/train_list.txt \
 $MY/img_train_lmdb
 
-echo "Create validate lmdb.."
-rm -rf $MY/img_val_lmdb
-/home/ubuntu/caffe/build/tools/convert_imageset \
---shuffle \
---resize_width=48 \
---resize_height=48 \
---gray \
-/home/ubuntu/Face-emotion-recognition-master/Preprocessing/data/face-alignment-fer2013/val \
-$MY/validation_list.txt \
-$MY/img_val_lmdb
+#echo "Create validate lmdb.."
+#rm -rf $MY/img_val_lmdb
+#/home/ubuntu/caffe/build/tools/convert_imageset \
+#--shuffle \
+#--resize_width=48 \
+#--resize_height=48 \
+#--gray \
+#/home/ubuntu/Face-emotion-recognition-master/Preprocessing/data/face-alignment-fer2013/val \
+#$MY/validation_list.txt \
+#$MY/img_val_lmdb
 
 echo "Create test lmdb.."
 rm -rf $MY/img_test_lmdb
@@ -30,7 +30,7 @@ rm -rf $MY/img_test_lmdb
 --resize_width=48 \
 --resize_height=48 \
 --gray \
-/home/ubuntu/Face-emotion-recognition-master/Preprocessing/data/face-alignment-fer2013/test \
+/home/ubuntu/Face-emotion-recognition-master/Preprocessing/data/face-alignment-fer2013 \
 $MY/test_list.txt \
 $MY/img_test_lmdb
 
