@@ -22,6 +22,7 @@ def main():
     npyMean = dir + 'Preprocessing/data/mean.npy'
     convert_mean(binMean, npyMean)
     im = caffe.io.load_image(dir+'Test/data/face-align-test.png',color=False)
+    #im = caffe.io.load_image(dir + 'Preprocessing/data/face-alignment-cohn-kanade-images/S132/005/S132_005_00000016.png', color=False)
     predict(im,net,dir)
 
     plt.show()
