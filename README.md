@@ -21,7 +21,7 @@ In this project, we build a classifier to detect basic human emotion from facial
 ## Datasets
 ### Training
 **FER2013 database** from Kaggle
-*Challenges in Representation Learning: Facial Expression Recognition Challenge*  
+[Challenges in Representation Learning: Facial Expression Recognition Challenge](https://www.kaggle.com/c/challenges-in-representation-learning-facial-expression-recognition-challenge/data)
  
 <div align="center">
 <img src="https://github.com/isthatyoung/Face-emotion-recognition/blob/master/images/Figure%201.png" width = "359" height = "169" align=center />
