@@ -131,7 +131,7 @@ if __name__ == "__main__":
     
     predicted_lables=[]
     true_labels = []
-    class_names = ['0', '1', '2', '3', '4', '5', '6']
+    class_names = ['Angry', 'Disgust', 'Fear', 'Happy', 'Sad', 'Surprise', 'Neutral']
     for i, image, label in reader:
         image_caffe = image.reshape(1, *image.shape)
         #print 'image shape: ',image_caffe.shape
