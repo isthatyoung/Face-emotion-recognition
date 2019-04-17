@@ -38,11 +38,14 @@ def train(solver):
             print('Iteration', i, 'testing...', 'accuracy:', acc)
             test_acc[i // test_interval] = acc
 
+    accuracy = test_acc.tolist()
+    sorted(accuracy, reverse=True)
+    print("The maximum test accuracy is {}".format(accuracy[0]))
     solver.net.save('/home/ubuntu/Face-emotion-recognition-master/Train/data/FaceEmotionNet.caffemodel')
     return train_loss, test_acc, test_interval
 
 def plot_error(loss):
-    plt.subplot(1, 2, 1)
+    plt.figure(1)
     iteration = np.arange(1, len(loss) + 1)
     plt.plot(iteration, loss, c='blue', alpha = 0.3)
     plt.xlabel('Number of Iteration')
@@ -55,7 +58,7 @@ def plot_error(loss):
 
 
 def plot_accuracy(accuracy, test_interval):
-    plt.subplot(1,2,1)
+    plt.figure(2)
     plt.plot(test_interval*np.arange(len(accuracy)), accuracy, c='#56fca2')
     plt.xlabel('Number of Iteration')
     plt.ylabel('Accuracy')
