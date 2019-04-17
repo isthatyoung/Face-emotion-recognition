@@ -70,12 +70,12 @@ Learning rate reduced 10% during **60%** and **85%** training.
 </div>   
  
 ### Testing accuracy
-Highest test accuracy on FER2013: **69%**.
+Highest test accuracy on FER2013: **78%**.
 
-  
 <div align="center">
-<img src="https://github.com/isthatyoung/Face-emotion-recognition/blob/master/images/figure%207.png" width = "426" height = "222" align=center />
+<img src="https://github.com/isthatyoung/Face-emotion-recognition/blob/master/Train/data/accuracy.png" width = "400" height = "300" align=center />
 </div>  
+
 
 ## Predicting
 ### Preprocess
