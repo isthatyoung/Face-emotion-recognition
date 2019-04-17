@@ -1,2 +1,0 @@
-#!/usr/bin/env bash
-/home/ubuntu/caffe/build/tools/caffe train --solver /home/ubuntu/Face-emotion-recognition-master/Test/code/FaceEmotionNet_fine_tuning_solver.prototxt --weights /home/ubuntu/Face-emotion-recognition-master/Train/data/FaceEmotionNet.caffemodel
