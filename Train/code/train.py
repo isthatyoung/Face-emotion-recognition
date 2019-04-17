@@ -39,8 +39,8 @@ def train(solver):
             test_acc[i // test_interval] = acc
 
     accuracy = test_acc.tolist()
-    sorted(accuracy, reverse=True)
-    print("The maximum test accuracy is {}".format(accuracy[0]))
+    sorted_accuracy = sorted(accuracy, reverse=True)
+    print("The maximum test accuracy is {}".format(sorted_accuracy[0]))
     solver.net.save('/home/ubuntu/Face-emotion-recognition-master/Train/data/FaceEmotionNet.caffemodel')
     return train_loss, test_acc, test_interval
 
