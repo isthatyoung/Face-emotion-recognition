@@ -21,7 +21,7 @@ In this project, we build a classifier to detect basic human emotion from facial
 ## Datasets
 ### Training
 **FER2013 database** from Kaggle
-*Challenges in Representation Learning: Facial Expression Recognition Challenge*  
+[Challenges in Representation Learning: Facial Expression Recognition Challenge](https://www.kaggle.com/c/challenges-in-representation-learning-facial-expression-recognition-challenge/data)
  
 <div align="center">
 <img src="https://github.com/isthatyoung/Face-emotion-recognition/blob/master/images/Figure%201.png" width = "359" height = "169" align=center />
@@ -70,14 +70,11 @@ Learning rate reduced 10% during **60%** and **85%** training.
 </div>   
  
 ### Testing accuracy
+Highest test accuracy on FER2013: **69%**.
 Average test accuracy on FER2013: **62%**.  
-Highest test accuracy on FER2013: **69%**.  
+  
 <div align="center">
 <img src="https://github.com/isthatyoung/Face-emotion-recognition/blob/master/images/figure%207.png" width = "426" height = "222" align=center />
-</div>  
-<br>
-<div align="center">
-<img src="https://github.com/isthatyoung/Face-emotion-recognition/blob/master/images/figure%208.png" width = "252" height = "144" align=center />
 </div>  
 
 ## Predicting
