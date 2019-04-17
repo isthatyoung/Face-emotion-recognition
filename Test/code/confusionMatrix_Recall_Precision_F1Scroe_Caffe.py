@@ -12,11 +12,9 @@
 # removed old codes and Added Recall/Precision/F1-Score as well 
 # 03/05/2017
 # Added ConfusionMatrix which was mistakenly ommited before.
-#info: 
-#if on windows, one can use these command in a batch file and ease him/her self 
-#REM Calculating Confusing Matrix 
+#info:
 #python confusionMatrix_convnet_test.py --proto cifar10_deploy_94_68.prototxt --model cifar10_deploy_94_68.caffemodel --mean mean.binaryproto --db_type lmdb --db_path cifar10_test_lmdb  
-#
+
 
 
 import sys
@@ -62,8 +60,7 @@ def plot_confusion_matrix(cm #confusion matrix
     if normalize:
         cm = cm.astype('float') / cm.sum(axis=1)[:, np.newaxis]
         print("confusion matrix is normalized!")
-    
-    #print(cm)
+
 
     thresh = cm.max() / 2.
     for i, j in itertools.product(range(cm.shape[0]), range(cm.shape[1])):

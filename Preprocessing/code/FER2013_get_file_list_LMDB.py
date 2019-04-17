@@ -18,7 +18,7 @@ def main():
 
     for dir in val_dir:
         for image in os.listdir('{}/{}'.format(path + 'fer2013/val', dir)):
-            f_train.writelines('/val/{}/{} {}'.format(dir, image, dir))
+            f_train.writelines('/val/{}/{} {}'.format(dir, image, dir)) ##TODO: append validation images to training set
             f_train.write('\n')
 
 

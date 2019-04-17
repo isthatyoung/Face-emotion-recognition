@@ -5,7 +5,7 @@ import os
 import numpy as np
 from align_faces import warp_and_crop_face, get_reference_facial_points
 def main():
-    dataset = 'cohn-kanade-images'
+    dataset = 'FER2013'
     path = '/home/ubuntu/Face-emotion-recognition-master/Preprocessing/data/' + dataset
     dirs = os.listdir(path)
     detector = MTCNN()
