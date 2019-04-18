@@ -59,12 +59,12 @@ def plot_error(loss):
 
 def plot_accuracy(accuracy, test_interval):
     plt.figure(2)
-    plt.plot(test_interval*np.arange(len(accuracy)), accuracy, c='#56fca2', linewidth= '2', color='orange')
+    plt.plot(test_interval*np.arange(len(accuracy)), accuracy, linewidth= '2', color='orange')
     plt.xlabel('Number of Iteration')
     plt.ylabel('Accuracy')
     plt.grid(True)
     plt.legend(loc='best')
-    plt.title('Test accuracy')
+    plt.title('Test accuracy vs iteration')
 
 
 
