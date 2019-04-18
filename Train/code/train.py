@@ -47,7 +47,7 @@ def train(solver):
 def plot_error(loss):
     plt.figure(1)
     iteration = np.arange(1, len(loss) + 1)
-    plt.plot(iteration, loss, c='blue', alpha = 0.3)
+    plt.plot(iteration, loss, c='blue', alpha = 0.5)
     plt.xlabel('Number of Iteration')
     plt.ylabel('Training Loss')
     plt.grid(True)
@@ -59,12 +59,12 @@ def plot_error(loss):
 
 def plot_accuracy(accuracy, test_interval):
     plt.figure(2)
-    plt.plot(test_interval*np.arange(len(accuracy)), accuracy, c='#56fca2')
+    plt.plot(test_interval*np.arange(len(accuracy)), accuracy, c='#56fca2', linewidth= '2', color='orange')
     plt.xlabel('Number of Iteration')
     plt.ylabel('Accuracy')
     plt.grid(True)
     plt.legend(loc='best')
-    plt.title('Test accuracy vs iteration on FAR2013')
+    plt.title('Test accuracy')
 
 
 
