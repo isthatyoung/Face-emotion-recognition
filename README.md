@@ -32,7 +32,7 @@ This dataset has 7 facial expression categories (angry, disgust, fear, happy, sa
 ### Testing
 * 3589 Testing set of FER2013.
 * Extended Cohn-Kanade Dataset(CK+)
-This dataset has 7 facial expression categories (angry, Contempt, Disgust, Fear, Happy, Sadness, Surprise).  
+This dataset has 7 facial expression categories (angry, contempt, disgust, fear, happy, sadness, surprise).  
 Totally 327 images with emotion labels. Because it has one label **Contempt** with our training set, so we test on CK+ without "Contempt" images.
 
 
@@ -47,7 +47,7 @@ Totally 327 images with emotion labels. Because it has one label **Contempt** wi
 * Training & Testing (recent accomplished)
 1. Build model
 2. Train model
-3. Adjust hyper-parameters
+3. Adjust hyper-parameters and train
 
 * Predicting (recent accomplished)
 
@@ -79,6 +79,11 @@ Highest test accuracy on FER2013: **78%**.
 <br>
 <div align="center">
 <img src="https://github.com/isthatyoung/Face-emotion-recognition/blob/master/images/figure%209.png" width = "400" height = "300" align=center />
+</div> 
+<br>
+<br>
+<div align="center">
+<img src="https://github.com/isthatyoung/Face-emotion-recognition/blob/master/images/figure%210.png" width = "377" height = "157" align=center />
 </div> 
 
 
