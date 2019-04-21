@@ -48,6 +48,7 @@ Totally 327 images with emotion labels. Because it has one label **Contempt** wi
 1. Build model
 2. Train model
 3. Adjust hyper-parameters
+4. Testing performance by accuracy, precision, recall, F1-score.
 
 * Predicting (recent accomplished)
 
