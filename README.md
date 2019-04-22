@@ -6,7 +6,6 @@ An implementation of face emotion recognition by Convolutional neurla network.
 * Python 2.7/3.5
 * OpenCV (cv2)
 * Numpy
-* skimage
 * [mtcnn](https://github.com/ipazc/mtcnn)
 
 ## Description
