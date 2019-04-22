@@ -3,7 +3,7 @@ An implementation of face emotion recognition by Convolutional neurla network.
 
 ## Requirements
 * Caffe 1.0.0
-* Python 2.7
+* Python 2.7/3.5
 * OpenCV (cv2)
 * Numpy
 * skimage
