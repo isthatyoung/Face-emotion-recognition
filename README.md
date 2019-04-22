@@ -37,7 +37,7 @@ This dataset has 7 facial expression categories (angry, disgust, fear, happy, sa
 1. Extract and create images for FER2013 from csv
 2. Face detection
 3. Face alignment
-4. Convert to LMDB
+4. Convert to LMDB format
 5. Compute mean
 
 * Training & Testing (recent accomplished)
