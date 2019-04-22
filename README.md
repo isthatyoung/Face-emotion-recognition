@@ -16,7 +16,7 @@ However, it is a very complex problem that involves many subtleties about facial
 Even just the tiniest change in someone’s face can be a signal of a different emotion. 
 Training models that understand human emotions will be critical to build truly intelligent machine that can interact with us humans do. 
 
-In this project, we build a classifier to detect basic human emotion from facial expression by two steps: face detection and CNN based recognition. 
+In this project, we build a classifier to recognize basic human emotion from facial expression by two steps: face detection and CNN based recognition. 
 
 ## Datasets
 ### Training
