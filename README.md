@@ -42,8 +42,8 @@ This dataset has 7 facial expression categories (angry, disgust, fear, happy, sa
 
 * Training & Testing (recent accomplished)
 1. Build model
-2. Train model
-3. Adjust hyper-parameters and train
+2. Adjust hyper-parameters
+3. Train model
 
 * Predicting (recent accomplished)
 
