@@ -31,7 +31,6 @@ This dataset has 7 facial expression categories (angry, disgust, fear, happy, sa
 ### Testing
 * 3589 Testing set of FER2013.
 
-
 ## Main tasks
 * Preprocessing (recent accomplished)
 1. Extract and create images for FER2013 from csv
